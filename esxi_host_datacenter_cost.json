@@ -1,0 +1,12 @@
+{"b4faeb3e-002c-4f1c-af93-62f59d7cd97f": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1723497033653,
+   "name": "ESXi Host Datacenter Cost",
+   "formula": "max(${adaptertype=VMWARE, objecttype=Datacenter, metric=cost|aggrTotalCost, depth=-2})",
+   "description": "Super Metric to attach Datacenter Cost to ESXi Host System object type",
+   "unitId": "",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
