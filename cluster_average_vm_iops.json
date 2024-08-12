@@ -1,0 +1,12 @@
+{"fea1d86b-a677-4f2a-bd43-414297e1fb2a": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1723500738493,
+   "name": "Cluster Average VM IOPS",
+   "formula": "Avg(${adaptertype=VMWARE, objecttype=VirtualMachine, attribute=virtualDisk|commandsAveraged_average, depth=2})",
+   "description": "Cluster Average VM IOPS: average of all VMs IOPS in the Cluster.",
+   "unitId": "",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
