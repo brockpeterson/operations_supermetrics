@@ -1,0 +1,12 @@
+{"e0ddb0fa-4da7-469b-8087-2e2943dd18ce": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1723501285953,
+   "name": "VM OS Uptime in Hours",
+   "formula": "${this, metric=sys|osUptime_latest}/3600",
+   "description": "VM OS Uptime in Hours",
+   "unitId": "hr",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
