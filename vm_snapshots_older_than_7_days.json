@@ -1,0 +1,12 @@
+{"75d3076d-3aad-49d3-9d69-680eb3811e7a": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1723501748264,
+   "name": "VM Number of Snapshots Older than 7 Days",
+   "formula": "count(${this, attribute=diskspace|snapshot|numberOfDays, where=($value > 7)})",
+   "description": "VM Number of Snapshots Older than 7 Days",
+   "unitId": "",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
