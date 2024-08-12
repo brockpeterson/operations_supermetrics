@@ -1,0 +1,12 @@
+{"7cc3337c-3b6b-4a07-9bbc-b73b4c7a61c1": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1723494623397,
+   "name": "VM Datastore Local",
+   "formula": "count(${adaptertype=VMWARE, objecttype=Datastore, metric=summary|isLocal, depth=1, where=($value equals 'true')}) > 0 ? 1 : 0",
+   "description": "VM Datastore Local: 1 if VM is on a local Datastore, 0 if not",
+   "unitId": "",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
