@@ -1,0 +1,12 @@
+{"d9af373b-eab6-4b45-a78d-a4390ccd3150": {
+   "resourceKinds": [{
+      "resourceKindKey": "Environment",
+      "adapterKindKey": "Container"
+   }],
+   "modificationTime": 1724693287561,
+   "name": "Custom Group Cost Total",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cost|monthlyTotalCost, depth=1})",
+   "description": "Custom Group Cost Total",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
