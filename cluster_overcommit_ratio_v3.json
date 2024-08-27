@@ -1,0 +1,12 @@
+{"8dd0e2ec-59ba-4dae-978a-f6264c8ebbaf": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1724769965748,
+   "name": "Cluster Overcommit Ratio v3",
+   "formula": "count(${adaptertype=VMWARE, objecttype=HostSystem, metric=config|hyperThread|active, depth=1, where=($value equals 'true')}) > 0 ? ${this, metric=cpu|vcpus_allocated_on_all_powered_on_vms}/(${this, metric=cpu|corecount_provisioned}*2) : (${this, metric=cpu|vcpus_to_cores_allocation_ratio})",
+   "description": "Cluster Overcommit Ratio v3",
+   "unitId": "",
+   "modifiedBy": "02acb579-fa7f-4285-8326-ef725b040e57"
+}}
