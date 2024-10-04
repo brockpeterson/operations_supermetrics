@@ -1,0 +1,12 @@
+{"86eddf24-831d-4f50-84be-eb7313b1d364": {
+   "resourceKinds": [{
+      "resourceKindKey": "Groups of VMs",
+      "adapterKindKey": "Container"
+   }],
+   "modificationTime": 1682010486560,
+   "name": "Average VM CPU Utilization for Group",
+   "formula": "Avg(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|usage_average, depth=2})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
