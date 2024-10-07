@@ -1,0 +1,12 @@
+{"755bf736-573d-4f62-9b48-3fe15b978510": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1728226263888,
+   "name": "VM Down Duration",
+   "formula": "${this, metric=sys|poweredOn} == 1 ? 0 : ${this, metric=Super Metric|sm_755bf736-573d-4f62-9b48-3fe15b978510} + 5",
+   "description": "VM Down Duration",
+   "unitId": "min",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
