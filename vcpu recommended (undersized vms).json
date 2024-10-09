@@ -1,0 +1,12 @@
+{"3581faf5-6bac-4a73-abe7-18776eccb3aa": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1694037493654,
+   "name": "vCPU Recommended (undersized VMs)",
+   "formula": "${this, metric=cpu|corecount_provisioned} + ${this, metric=summary|undersized|vcpus}",
+   "description": "vCPU Recommended (undersized VMs)",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
