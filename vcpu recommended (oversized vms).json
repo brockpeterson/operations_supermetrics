@@ -1,0 +1,12 @@
+{"b3ac88b8-09b6-4fc3-a4b2-35e615f340c9": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1694040789186,
+   "name": "vCPU Recommended (oversized VMs)",
+   "formula": "${this, metric=cpu|corecount_provisioned} - ${this, metric=summary|oversized|vcpus}",
+   "description": "vCPU Recommended (oversized VMs)",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
