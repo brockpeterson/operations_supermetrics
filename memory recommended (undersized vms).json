@@ -1,0 +1,12 @@
+{"12439df9-0d26-42e8-8c80-8d3dcfec33dc": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1694041823354,
+   "name": "Memory Recommended (undersized VMs)",
+   "formula": "${this, metric=config|hardware|memoryKB} + ${this, metric=summary|undersized|memory}",
+   "description": "Memory Recommended (undersized VMs)",
+   "unitId": "kb",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
