@@ -1,0 +1,12 @@
+{"cbf52eb9-b231-4e45-8acb-760a3c84ed82": {
+   "resourceKinds": [{
+      "resourceKindKey": "Environment",
+      "adapterKindKey": "Container"
+   }],
+   "modificationTime": 1734284028021,
+   "name": "Total Allocated VM vCPU",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|corecount_provisioned, depth=1})",
+   "description": "Total vCPU allocated to VMs in a Custom Group.",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
