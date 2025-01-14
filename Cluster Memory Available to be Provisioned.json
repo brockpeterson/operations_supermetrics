@@ -1,0 +1,12 @@
+{"65407510-24ca-40dd-ae32-ec7c253baf17": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1736885097265,
+   "name": "Memory Available to be Provisioned",
+   "formula": "(${this, metric=mem|haTotalCapacity_average} - ${this, metric=mem|memory_allocated_on_all_vms})/1024/1024/1024",
+   "description": "Memory Available to be Provisioned",
+   "unitId": "tb",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
