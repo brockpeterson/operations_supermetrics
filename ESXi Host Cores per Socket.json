@@ -1,0 +1,12 @@
+{"2f1f770b-5082-46f7-832c-234e143324a9": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1738614919317,
+   "name": "ESXi Host Cores per Socket",
+   "formula": "${this, metric=hardware|cpuInfo|numCpuCores}/${this, metric=cpu|numCpuSockets}",
+   "description": "ESXi Host Cores per Socket",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
