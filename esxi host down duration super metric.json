@@ -1,0 +1,12 @@
+{"83d5e19a-5c36-44bf-8c95-ae3621911fc8": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1738938626444,
+   "name": "ESXi Host Down Duration",
+   "formula": "${this, metric=sys|poweredOn} == 1 ? 0 : ${this, metric=Super Metric|sm_83d5e19a-5c36-44bf-8c95-ae3621911fc8} + 5",
+   "description": "ESXi Host Down Duration",
+   "unitId": "min",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
