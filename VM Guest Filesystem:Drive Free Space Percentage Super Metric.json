@@ -1,0 +1,12 @@
+{"eae524fe-c9a2-4125-9304-8402f1e46268": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1739384734429,
+   "name": "VM Guest Filesystem (/boot) free %",
+   "formula": "((${this, metric=guestfilesystem:/boot|capacity}-${this, metric=guestfilesystem:/boot|usage})/${this, metric=guestfilesystem:/boot|capacity})*100",
+   "description": "",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
