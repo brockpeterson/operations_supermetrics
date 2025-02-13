@@ -1,0 +1,12 @@
+{"ad8f33d4-4c5e-4fdd-8caa-2dc164a83304": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1739450065270,
+   "name": "VM Guest Filesystem/Drive Free Space",
+   "formula": "((${this, metric=guestfilesystem|capacity_total}-${this, metric=guestfilesystem|usage_total})/(${this, metric=guestfilesystem|capacity_total}))*100",
+   "description": "VM Guest Filesystem/Drive Free Space ",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
