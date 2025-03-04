@@ -1,0 +1,12 @@
+{"47dd9a7b-9fe4-408d-b092-462f097a412e": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1741094170745,
+   "name": "Cluster Memory Free after vSphere HA",
+   "formula": "((${this, metric=mem|haTotalCapacity_average}-${this, metric=mem|total_need})/${this, metric=mem|haTotalCapacity_average})*100",
+   "description": "Cluster Memory Free after vSphere HA %",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}

@@ -1,0 +1,12 @@
+{"eff0db65-ca1f-4559-9ef8-2f6ef67aec55": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1741093655720,
+   "name": "Cluster Memory Used after vSphere HA",
+   "formula": "(${this, metric=mem|total_need}/${this, metric=mem|haTotalCapacity_average})*100",
+   "description": "Cluster Memory Used after vSphere HA %",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}

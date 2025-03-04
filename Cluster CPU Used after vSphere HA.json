@@ -1,0 +1,12 @@
+{"1f900ada-0343-4b76-93f5-b550326ff7cc": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1741091607567,
+   "name": "Cluster CPU Used after vSphere HA",
+   "formula": " (${this, metric=cpu|usagemhz_average}/${this, metric=cpu|haTotalCapacity_average})*100 ",
+   "description": "Cluster CPU Used % after vSphere HA",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
