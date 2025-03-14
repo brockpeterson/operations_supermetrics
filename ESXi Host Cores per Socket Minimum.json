@@ -1,0 +1,12 @@
+{"365eac6a-e918-4cfe-8a66-835f0521d85b": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1741948095153,
+   "name": "ESXi Host Cores per Socket Minimum",
+   "formula": "${this, metric=Super Metric|sm_2f1f770b-5082-46f7-832c-234e143324a9} < 16 ? 16 : ${this, metric=hardware|cpuInfo|numCpuCores}",
+   "description": "ESXi Host Cores per Socket Minimum (Minimum 16)",
+   "unitId": "none",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
