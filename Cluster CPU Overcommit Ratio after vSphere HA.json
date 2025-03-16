@@ -1,0 +1,12 @@
+{"12991d1a-e3fc-4ede-b387-3eb78e9280b7": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1742145673202,
+   "name": "Cluster CPU Overcommit Ratio after vSphere HA",
+   "formula": "${this, metric=cpu|vcpus_allocated_on_all_powered_on_vms}/${this, metric=cpu|haCorecount_provisioned}",
+   "description": "Cluster CPU Overcommit Ratio after vSphere HA",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
