@@ -1,0 +1,12 @@
+{"f25dd53c-b512-44fa-a327-1f730c6563c1": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1742146376054,
+   "name": "Cluster Memory Overcommit Ratio after vSphere HA",
+   "formula": "${this, metric=mem|memory_allocated_on_all_powered_on_vms}/${this, metric=mem|haTotalCapacity_average}",
+   "description": "Cluster Memory Overcommit Ratio after vSphere HA",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
