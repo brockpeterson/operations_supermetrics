@@ -1,0 +1,12 @@
+{"1b3840c1-0e20-47a9-a59b-f074a83983dc": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1743610430478,
+   "name": "VM with Max CPU Ready (in Cluster)",
+   "formula": "max(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|ready_summation, depth=2})",
+   "description": "VM with Max CPU Ready (in Cluster)",
+   "unitId": "msec",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
