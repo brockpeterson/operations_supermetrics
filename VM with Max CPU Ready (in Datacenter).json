@@ -1,0 +1,12 @@
+{"587187cb-db81-4e17-bee6-329f64d4a745": {
+   "resourceKinds": [{
+      "resourceKindKey": "Datacenter",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1743610531999,
+   "name": "VM with Max CPU Ready (in Datacenter)",
+   "formula": "max(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|ready_summation, depth=3})",
+   "description": "VM with Max CPU Ready (in Datacenter)",
+   "unitId": "msec",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
