@@ -1,0 +1,12 @@
+{"80792f0c-2cac-4efa-92c8-fba3ef50019f": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1744473784361,
+   "name": "Disk Capacity Used",
+   "formula": "((${this, metric=diskspace|total_capacity} - ${this, metric=diskspace|total_usage}) / ${this, metric=diskspace|total_capacity})*100",
+   "description": "Cluster Disk Capacity Used Percentage",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
