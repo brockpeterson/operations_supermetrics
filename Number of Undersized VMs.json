@@ -1,0 +1,12 @@
+{"36519a2d-df26-4abe-bca2-0c85e75ef3e7": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1745524941816,
+   "name": "Number of Undersized VMs",
+   "formula": "count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=summary|undersized, depth=2, where= \"summary|undersized == 1\"})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
