@@ -1,0 +1,50 @@
+{
+   "7175d429-05ee-46fc-91de-dda6e5aea401": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1745411099921,
+      "name": "Memory Free after vSphere HA",
+      "formula": "((${this, metric=mem|haTotalCapacity_average}-${this, metric=mem|total_need})/${this, metric=mem|haTotalCapacity_average})",
+      "description": "Memory Free after vSphere HA ",
+      "unitId": "gb",
+      "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+   },
+   "769eb8ef-f15a-444d-becc-f94ba3539d77": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1745411865841,
+      "name": "90% of Memory Free after vSphere HA",
+      "formula": "((${this, metric=mem|haTotalCapacity_average}-${this, metric=mem|total_need})/${this, metric=mem|haTotalCapacity_average})*.9",
+      "description": "90% of Memory Free after vSphere HA ",
+      "unitId": "gb",
+      "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+   },
+   "0540abaa-e1c3-406b-84e3-738fd33e033b": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1745413462768,
+      "name": "VMs (based on Average Memory) that will fit into Cluster (90%)",
+      "formula": "floor(${this, metric=Super Metric|sm_769eb8ef-f15a-444d-becc-f94ba3539d77}/${this, metric=Super Metric|sm_e0341428-5980-47e0-8f29-4c05cfabfbbf})",
+      "description": "VMs (based on Average Memory) that will fit into Cluster (90%)",
+      "unitId": "",
+      "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+   },
+   "e0341428-5980-47e0-8f29-4c05cfabfbbf": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1745408983091,
+      "name": "Average Memory Allocated to each VM",
+      "formula": "avg(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|hardware|memoryKB, depth=2})/1024/1024",
+      "description": "",
+      "unitId": "gb",
+      "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+   }
+}
