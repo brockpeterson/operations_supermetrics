@@ -1,0 +1,12 @@
+{"491fd2e8-092c-4dd6-87e9-300659c109b6": {
+   "resourceKinds": [{
+      "resourceKindKey": "Datastore",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1749209219000,
+   "name": "Datastore Disk Space Used",
+   "formula": "(${this, metric=diskspace|disktotal}/${this, metric=diskspace|capacity})*100",
+   "description": "Datastore Disk Space Used",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
