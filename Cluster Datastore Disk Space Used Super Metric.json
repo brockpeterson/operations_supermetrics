@@ -1,0 +1,12 @@
+{"e359f179-00e5-4b44-9ca4-8f3caf217a04": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1749335921912,
+   "name": "Datastore Space Used for Cluster",
+   "formula": "max(${adaptertype=VMWARE, objecttype=Datastore, metric=Super Metric|sm_491fd2e8-092c-4dd6-87e9-300659c109b6, depth=3, where=(${metric=config|name} contains 'Datastore' )})",
+   "description": "Datastore Space Used for Cluster",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
