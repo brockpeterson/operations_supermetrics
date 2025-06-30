@@ -1,0 +1,12 @@
+{"d4eda786-8227-4253-9710-08a2d9eeddb3": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1751249185173,
+   "name": "Cluster Capacity Bit",
+   "formula": "((${this, metric=cpu|capacity_usagepct_average} < 50) && (${this, metric=mem|usage_average} < 50) && (${this, metric=Super Metric|sm_80792f0c-2cac-4efa-92c8-fba3ef50019f} < 50)) ? 0 : 1",
+   "description": "Super Metric that is 0 if Cluster cpu/memory/disk usage is under 50%, and 1 otherwise",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
