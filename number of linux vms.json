@@ -1,0 +1,12 @@
+{"5e21cc95-ab23-4246-9f39-0082220aa20c": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1754862742293,
+   "name": "Number of Linux VMs",
+   "formula": "count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|guestFullName, depth=2, where =\"config|guestFullName contains Linux\"})",
+   "description": "Number of Linux VMs",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
