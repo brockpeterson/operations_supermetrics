@@ -1,0 +1,12 @@
+{"bb065fd2-7d1b-4f6b-9d9c-4dd041981d86": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1754862763296,
+   "name": "Number of Windows VMs",
+   "formula": "count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|guestFullName, depth=2, where =\"config|guestFullName contains Windows\"})",
+   "description": "Number of Windows VMs",
+   "unitId": "",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
