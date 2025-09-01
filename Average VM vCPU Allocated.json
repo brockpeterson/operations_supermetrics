@@ -1,0 +1,12 @@
+{"68f4ec3c-59a8-4e1b-be59-20b4e6b2b9c5": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1756662222067,
+   "name": "Average VM vCPU Allocated",
+   "formula": "(${this, metric=cpu|vcpus_allocated_on_all_vms}/${this, metric=summary|total_number_vms})",
+   "description": "Average VM vCPU Allocated",
+   "unitId": "vcpus",
+   "modifiedBy": "a2efceb9-d049-44d9-87c8-21a8a2f6d116"
+}}
