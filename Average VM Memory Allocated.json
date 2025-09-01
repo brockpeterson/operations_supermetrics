@@ -1,0 +1,12 @@
+{"7d6c4265-5406-4b80-8204-28404eae21a3": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1756662231863,
+   "name": "Average VM Memory Allocated",
+   "formula": "(${this, metric=mem|memory_allocated_on_all_vms}/${this, metric=summary|total_number_vms})/1024/1024",
+   "description": "Average VM Memory Allocated",
+   "unitId": "gb",
+   "modifiedBy": "a2efceb9-d049-44d9-87c8-21a8a2f6d116"
+}}
