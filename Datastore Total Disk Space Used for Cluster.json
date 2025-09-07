@@ -1,0 +1,12 @@
+{"c1242133-1557-402f-9ca9-07c5f9dfefb0": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757260851106,
+   "name": "Datastore Total Disk Space Used for Cluster",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=diskspace|disktotal, depth=3, where=(${metric=config|name} contains 'vcf-ops' )})",
+   "description": "Datastore Total Disk Space Used for Cluster",
+   "unitId": "gb",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
