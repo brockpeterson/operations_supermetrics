@@ -1,0 +1,12 @@
+{"a8a36948-2adb-4678-915c-48fe6439c94c": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757261310416,
+   "name": "Datastore Disk Space Used for Cluster (%)",
+   "formula": "(${this, metric=Super Metric|sm_c1242133-1557-402f-9ca9-07c5f9dfefb0}/${this, metric=Super Metric|sm_82964545-57b9-4756-bafa-88f61e766529})*100",
+   "description": "Datastore Disk Space Used for Cluster (%)",
+   "unitId": "percent",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
