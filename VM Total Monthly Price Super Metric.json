@@ -1,0 +1,12 @@
+{"e503842d-10e0-4c1e-a917-552484b1bd3c": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757371285237,
+   "name": "Total Monthly Price",
+   "formula": "${this, metric=summary|metering|value}*30",
+   "description": "Total Monthly Price based on 30d",
+   "unitId": "currency",
+   "modifiedBy": "98c5b2a0-1517-4104-9895-fd3faf5b77cc"
+}}
