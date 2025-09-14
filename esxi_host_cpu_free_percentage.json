@@ -1,0 +1,12 @@
+{"c8917409-669f-4e99-b1a0-28be536f0972": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757802080718,
+   "name": "CPU Free",
+   "formula": "(100 - ${this, metric=cpu|usage_average})",
+   "description": "CPU Free Percentage",
+   "unitId": "percent",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
