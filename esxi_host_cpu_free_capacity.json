@@ -1,0 +1,12 @@
+{"95225723-1200-443b-a933-486ad2d5fb52": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757810627168,
+   "name": "CPU Free Capacity",
+   "formula": "${this, metric=cpu|capacity_provisioned} - ${this, metric=cpu|usagemhz_average}",
+   "description": "CPU Free Capacity",
+   "unitId": "mhz",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
