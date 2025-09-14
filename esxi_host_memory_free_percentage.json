@@ -1,0 +1,12 @@
+{"73678a0d-31d9-4b7d-a997-31838b37cd47": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1757802333232,
+   "name": "Memory Free",
+   "formula": "(100 - ${this, metric=mem|usage_average})",
+   "description": "Memory Free Percentage",
+   "unitId": "percent",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
