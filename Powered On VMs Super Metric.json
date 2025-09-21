@@ -1,0 +1,12 @@
+{"f545594c-181d-4320-8669-b953b687dc07": {
+   "resourceKinds": [{
+      "resourceKindKey": "Datastore",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1758494072803,
+   "name": "Number of Powered Off VMs",
+   "formula": "count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|guestFullName, depth=-1, where=\"summary|runtime|powerState contains On\"}) ",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
