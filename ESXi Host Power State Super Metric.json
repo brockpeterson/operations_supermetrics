@@ -1,0 +1,12 @@
+{"48d3a423-b8c6-4870-9240-ea8322783c55": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1758903409566,
+   "name": "ESX Host Power State (0 or 1)",
+   "formula": "count(${this, metric=runtime|powerState, where=($value equals 'Powered On' )})",
+   "description": "ESX Host Power State Represented in Binary (Powered On = 1 and Powered Off = 0)",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
