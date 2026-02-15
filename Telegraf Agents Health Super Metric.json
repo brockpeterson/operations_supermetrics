@@ -1,0 +1,12 @@
+{"b1e835d5-8ca3-4142-be1d-372eb249b1b4": {
+   "resourceKinds": [{
+      "resourceKindKey": "Environment",
+      "adapterKindKey": "Container"
+   }],
+   "modificationTime": 1771168923928,
+   "name": "Telegraf Agents Healthy",
+   "formula": "count(${adaptertype=APPOSUCP, objecttype=linux, metric=Telegraf Availability, depth=2,where=($value == 1)}) + count(${adaptertype=APPOSUCP, objecttype=win, metric=Telegraf Availability, depth=2,where=($value == 1)})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
