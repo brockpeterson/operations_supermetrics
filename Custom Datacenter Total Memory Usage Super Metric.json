@@ -1,0 +1,12 @@
+{"dd1e5c88-4858-4861-a57c-15e852dc31db": {
+   "resourceKinds": [{
+      "resourceKindKey": "CustomDatacenter",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1771431680171,
+   "name": "Total Memory Usage",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=mem|vmMemoryDemand, depth=3})",
+   "description": "Total Memory Usage for All VMs in Custom Datacenter",
+   "unitId": "kb",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}

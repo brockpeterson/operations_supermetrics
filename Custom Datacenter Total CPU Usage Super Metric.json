@@ -1,0 +1,12 @@
+{"202947a8-8df9-4960-920f-83073ef072aa": {
+   "resourceKinds": [{
+      "resourceKindKey": "CustomDatacenter",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1771430784540,
+   "name": "Total CPU Usage",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|usagemhz_average, depth=3})",
+   "description": "Total CPU Usage for all VMs in Custom Datacenter",
+   "unitId": "mhz",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
