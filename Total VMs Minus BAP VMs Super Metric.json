@@ -1,0 +1,12 @@
+{"71e4068a-6fce-4d9a-9830-22666269812b": {
+   "resourceKinds": [{
+      "resourceKindKey": "vSphere World",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1772236069729,
+   "name": "Total VMs Minus BAP VMs",
+   "formula": "${this, metric=summary|total_number_vms}-count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=CustomProperty|ownertag, depth=5})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
