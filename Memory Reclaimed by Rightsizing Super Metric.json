@@ -1,0 +1,12 @@
+{"9218d487-ca62-4aa1-bede-19590cd1fa38": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1772311219852,
+   "name": "Memory Reclaimed by Rightsizing",
+   "formula": "(sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=summary|oversized|memory, depth=1}))/1024/1024",
+   "description": "",
+   "unitId": "gb",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}

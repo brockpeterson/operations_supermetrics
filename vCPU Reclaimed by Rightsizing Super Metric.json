@@ -1,0 +1,12 @@
+{"d0fa1399-d8d8-4008-befc-595e79e9c44f": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1772310546603,
+   "name": "vCPU Reclaimed by Rightsizing",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=summary|oversized|vcpus, depth=1})",
+   "description": "",
+   "unitId": "vcpus",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
