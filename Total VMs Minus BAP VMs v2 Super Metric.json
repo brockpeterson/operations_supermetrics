@@ -1,0 +1,12 @@
+{"80650cf9-af0f-4b3f-b227-f9c562ab2291": {
+   "resourceKinds": [{
+      "resourceKindKey": "vSphere World",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1772278628444,
+   "name": "Total VMs Minus BP VMs v2",
+   "formula": "${this, metric=summary|total_number_vms}-count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|name, depth=5,where=($value contains 'bpeterson')})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
