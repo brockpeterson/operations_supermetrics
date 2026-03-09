@@ -1,0 +1,12 @@
+{"8c5c3916-20ce-4d80-9232-8e260f9aa99f": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1773065027413,
+   "name": "Total ESXi Host Memory Not in Maintenance Mode",
+   "formula": "(sum(${adaptertype=VMWARE, objecttype=HostSystem, metric=hardware|memorySize, depth=1, where=\"runtime|maintenanceState contains notInMaintenance\"}))/1024/1024",
+   "description": "",
+   "unitId": "gb",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
