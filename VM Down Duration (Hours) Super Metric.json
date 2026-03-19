@@ -1,0 +1,12 @@
+{"d1a4a018-05c5-4bfa-91b1-6805f0621840": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1773951483786,
+   "name": "VM Down Duration (Hours)",
+   "formula": "${this, metric=sys|poweredOn} == 1 ? 0 : (${this, metric=Super Metric|sm_d1a4a018-05c5-4bfa-91b1-6805f0621840} + .083333)",
+   "description": "VM Down Duration (Hours)",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}

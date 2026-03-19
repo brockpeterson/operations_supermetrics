@@ -1,0 +1,12 @@
+{"8f6f7350-0e14-417f-9576-9b380cb55799": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1773951690974,
+   "name": "VM Down Duration Integer (Days)",
+   "formula": "floor(${this, metric=Super Metric|sm_8549756b-610e-4a5d-96bd-4d16afaa82a5})",
+   "description": "VM Down Duration (Days)",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
