@@ -1,0 +1,12 @@
+{"0fe939db-3381-4dd9-8f1c-6cdc834ba7cf": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1774210307054,
+   "name": "VM OS Mis-Match",
+   "formula": "count(${this, metric=summary|guest|fullName, where=(${metric=summary|guest|fullName} equals ${metric=config|guestFullName})})\n\n",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
