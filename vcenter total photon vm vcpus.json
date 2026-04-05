@@ -1,0 +1,12 @@
+{"e0540512-eb98-4340-9288-bc4bd415f18c": {
+   "resourceKinds": [{
+      "resourceKindKey": "VMwareAdapter Instance",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1775422361643,
+   "name": "vCenter Total Photon VM vCPUs",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|corecount_provisioned, depth=4, where =\"config|guestFullName contains Photon\"})",
+   "description": "Total number of vCPU allocated to all Photon VMs in vCenter",
+   "unitId": "vcpus",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
