@@ -1,0 +1,12 @@
+{"7cd98fcd-359e-468a-8305-56451ca9953a": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1775409512633,
+   "name": "Average VM CPU Usage",
+   "formula": "avg(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|usage_average, depth=2})",
+   "description": "Average CPU Usage % for all VMs in a Cluster",
+   "unitId": "percent",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
