@@ -1,0 +1,12 @@
+{"38efbe7f-3a6c-4538-bb30-565bc376716a": {
+   "resourceKinds": [{
+      "resourceKindKey": "VMwareAdapter Instance",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1775410953023,
+   "name": "vCenter Number of Linux VMs",
+   "formula": "count(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=config|guestFullName, depth=4, where =\"config|guestFullName contains Linux\"})",
+   "description": "Total Number of Linux VMs at the vCenter level",
+   "unitId": "",
+   "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+}}
