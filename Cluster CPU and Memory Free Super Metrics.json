@@ -1,0 +1,98 @@
+{
+   "285f806a-60fc-4e92-b65c-f65209d7528a": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778935140140,
+      "name": "Two Failed ESXi Hosts Capacity",
+      "formula": "((${this, metric=Super Metric|sm_8af462e1-4926-4ded-ab4f-9adaad96e5f9} > 0) && (${this, metric=Super Metric|sm_43c4f252-ede8-40eb-96ad-5ec05d5aee74} > 0)) ? 1 : 0",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "e7518cbe-1af2-4e51-b0a0-da722033eb85": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778934900418,
+      "name": "Failed ESXi Host Capacity",
+      "formula": "((${this, metric=Super Metric|sm_47a9fcc8-692f-45ff-a8a2-011c62507ebe} > 0) && (${this, metric=Super Metric|sm_dd25ecf1-9f40-456d-96eb-d0213f3fb83c} > 0)) ? 1 : 0",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "dd25ecf1-9f40-456d-96eb-d0213f3fb83c": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778931844649,
+      "name": "Memory Free after 1 Failed Host",
+      "formula": "(${this, metric=mem|host_provisioned} - ${this, metric=mem|total_need}) - max(${adaptertype=VMWARE, objecttype=HostSystem, metric=mem|host_provisioned, depth=1})",
+      "description": "Memory Free after 1 Failed Hosts",
+      "unitId": "kb",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "6fa62bc0-3f89-42c7-9ff3-77745cac3e1b": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778933282920,
+      "name": "Memory Free",
+      "formula": "${this, metric=mem|host_provisioned} - ${this, metric=mem|total_need}",
+      "description": "Memory Free",
+      "unitId": "kb",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "cd1795d2-ca24-4c00-b792-f7d8c98573a6": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778933181519,
+      "name": "CPU Free",
+      "formula": "${this, metric=cpu|capacity_provisioned} - ${this, metric=cpu|usagemhz_average}",
+      "description": "CPU Free",
+      "unitId": "mhz",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "43c4f252-ede8-40eb-96ad-5ec05d5aee74": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778931860422,
+      "name": "Memory Free after 2 Failed Hosts",
+      "formula": "(${this, metric=mem|host_provisioned} - ${this, metric=mem|total_need}) - (max(${adaptertype=VMWARE, objecttype=HostSystem, metric=mem|host_provisioned, depth=1}))*2",
+      "description": "Memory Free after 2 Failed Hosts",
+      "unitId": "kb",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "47a9fcc8-692f-45ff-a8a2-011c62507ebe": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778931700052,
+      "name": "CPU Free after 1 Failed Host",
+      "formula": "(${this, metric=cpu|capacity_provisioned} - ${this, metric=cpu|usagemhz_average}) - max(${adaptertype=VMWARE, objecttype=HostSystem, metric=cpu|capacity_provisioned, depth=1})",
+      "description": "CPU Free after 1 Failed Hosts",
+      "unitId": "mhz",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   },
+   "8af462e1-4926-4ded-ab4f-9adaad96e5f9": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1778931712166,
+      "name": "CPU Free after 2 Failed Hosts",
+      "formula": "(${this, metric=cpu|capacity_provisioned} - ${this, metric=cpu|usagemhz_average}) - (max(${adaptertype=VMWARE, objecttype=HostSystem, metric=cpu|capacity_provisioned, depth=1}))*2",
+      "description": "CPU Free after 2 Failed Hosts",
+      "unitId": "mhz",
+      "modifiedBy": "303829ed-8f02-4b76-821b-2663304cc852"
+   }
+}
