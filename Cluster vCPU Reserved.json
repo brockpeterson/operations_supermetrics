@@ -1,0 +1,12 @@
+{"12a18c70-d65d-4cab-a751-4715e58fad83": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1784558738584,
+   "name": "vCPU Reserved",
+   "formula": "floor(${this, metric=cpu|reservedCapacity_average} / (avg(${adaptertype=VMWARE, objecttype=HostSystem, metric=hardware|cpuInfo|hz, depth=1})/100/100/100))",
+   "description": "Cluster vCPU Reserved",
+   "unitId": "vcpus",
+   "modifiedBy": "eb472bed-a5ca-4339-841f-c56bbad9b399"
+}}
