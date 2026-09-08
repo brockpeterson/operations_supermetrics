@@ -1,0 +1,12 @@
+{"6806c195-7436-4391-a4ff-14f5e8c1402f": {
+   "resourceKinds": [{
+      "resourceKindKey": "Datastore",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1788864534381,
+   "name": "Total VM Snapshots",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=summary|snapshot_count, depth=-1})",
+   "description": "Datastore Super Metric: total number of VM Snapshots",
+   "unitId": "",
+   "modifiedBy": "8ba8b3dc-f7d0-42e2-8479-7572da06b3d0"
+}}
